@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Grid container>
         <Grid item xs={8}>
-          <LineChart options={options} data={data} />
+          <LineChart />
           <OptionTabs />
         </Grid>
       </Grid>
