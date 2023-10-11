@@ -1,6 +1,6 @@
-import React from "react";
-import "./App.css";
-import { Grid } from "@mui/material";
+import React from 'react'
+import './App.css'
+import { Grid } from '@mui/material'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         </Grid>
       </Grid>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
