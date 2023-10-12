@@ -25,6 +25,25 @@ ChartJS.register(
 export const options = {
   responsive: true,
   plugins: {
+    tooltip: {
+      enabled: true,
+      intersect: false,
+      callbacks: {
+        label: (context: any) => {
+          let label = ''
+          if (context.parsed.y) {
+            label = context.parsed.y + '%'
+          }
+          return label
+        },
+
+        item: (context: any) => {
+          const itemTooltip = document.createElement('div')
+          itemTooltip.innerHTML = '<button>Click Me</button>'
+          return itemTooltip
+        },
+      },
+    },
     legend: {
       position: 'top' as const,
     },
